@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:textColor="#fff"-->
+<!--    app:chipBackgroundColor="@color/colorPrimary">-->
+
+<!--</com.google.android.material.chip.Chip>-->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tag_background"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="4dp"
+    android:layout_margin="4dp"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#000"
+    style="@style/TextAppearance.MaterialComponents.Caption"
+    android:text="Hello There"/>

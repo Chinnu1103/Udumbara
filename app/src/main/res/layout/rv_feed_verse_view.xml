@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_verse_feed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rippleColor="#21212108"
+    android:layout_margin="16dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_verse_type"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="Verse Explained"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tv_verse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:padding="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="There is nothing lost or wasted in this life. Stay Hungry Stay Foolish."
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_reference"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/cinzel"
+                android:text="Bhagavad Gita 1:1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_quote_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_more"
+                app:tint="#000" />
+
+        </LinearLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/fl_verse_tags"
+            android:layout_width="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:flexWrap="wrap"
+            app:alignContent="center"
+            app:alignItems="center"
+            android:layout_height="wrap_content">
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:id="@+id/tv_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hind"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="There is nothing lost or wasted in this life. Stay Hungry Stay Foolish."
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

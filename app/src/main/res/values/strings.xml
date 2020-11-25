@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Udumbara</string>
+    <string name="title_activity_start">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="user_dp">User DP</string>
+    <string name="google_auth_client_id">132745209065-jnlinslj25d32o3q61pvrcpnguah2cqf.apps.googleusercontent.com</string>
+    <string name="google_auth_client_secret">3FmHlUBnfWgJ5OQPlk0LQE4M</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

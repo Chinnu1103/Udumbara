@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "132745209065",
+    "firebase_url": "https://udumbara-app.firebaseio.com",
+    "project_id": "udumbara-app",
+    "storage_bucket": "udumbara-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132745209065:android:d2dbbf19597532fab03c78",
+        "android_client_info": {
+          "package_name": "com.udumbara.udumbara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132745209065-3vr4be8bakfcrjjd24g1ja66ugv09t6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udumbara.udumbara",
+            "certificate_hash": "69a243f057d3bb528d77cd246fbc5c914309cfcb"
+          }
+        },
+        {
+          "client_id": "132745209065-jnlinslj25d32o3q61pvrcpnguah2cqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmguDuAN6dQbb49-os_2l6m3MNDEaB39I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132745209065-jnlinslj25d32o3q61pvrcpnguah2cqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

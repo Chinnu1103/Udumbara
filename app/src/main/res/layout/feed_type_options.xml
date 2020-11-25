@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/btg_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:singleSelection="true"
+        app:selectionRequired="false"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_story_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="16dp"
+            app:strokeColor="@color/colorPrimary"
+            style="?attr/materialButtonOutlinedStyle"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Stories" />
+
+        <Button
+            android:id="@+id/bt_verse_explained_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?attr/materialButtonOutlinedStyle"
+            android:gravity="center"
+            android:padding="16dp"
+            app:strokeColor="@color/colorPrimary"
+            android:text="Verse Explained"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_verse_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            style="?attr/materialButtonOutlinedStyle"
+            android:gravity="center"
+            android:padding="16dp"
+            app:strokeColor="@color/colorPrimary"
+            android:text="Verse"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</LinearLayout>

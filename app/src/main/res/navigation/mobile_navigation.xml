@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.udumbara.udumbara.bottomNav.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_mood_selection"
+            app:destination="@id/navigation_feed" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_read"
+        android:name="com.udumbara.udumbara.bottomNav.read.ReadFragment"
+        android:label="fragment_read"
+        tools:layout="@layout/fragment_read" >
+        <argument
+            android:name="book"
+            app:argType="string"
+            android:defaultValue="BG" />
+        <argument
+            android:name="chapter"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="verse"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="com.udumbara.udumbara.bottomNav.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <argument
+            android:name="mood"
+            app:argType="string"
+            android:defaultValue="None" />
+        <action
+            android:id="@+id/action_display_story"
+            app:destination="@id/storyActivity" />
+        <action
+            android:id="@+id/action_display_verse_explained"
+            app:destination="@id/verseExplainedActivity" />
+        <action
+            android:id="@+id/action_display_verse"
+            app:destination="@id/navigation_read" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.udumbara.udumbara.bottomNav.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/storyActivity"
+        android:name="com.udumbara.udumbara.StoryActivity"
+        android:label="activity_story"
+        tools:layout="@layout/activity_story">
+        <argument
+            android:name="story"
+            app:argType="com.udumbara.udumbara.utils.Story" />
+    </activity>
+    <activity
+        android:id="@+id/verseExplainedActivity"
+        android:name="com.udumbara.udumbara.VerseExplainedActivity"
+        android:label="activity_verse_explained"
+        tools:layout="@layout/activity_verse_explained" >
+        <argument
+            android:name="verseText"
+            app:argType="string" />
+        <argument
+            android:name="verseReference"
+            app:argType="string" />
+        <argument android:name="explanation"
+            app:argType="string" />
+        <argument
+            android:name="tags"
+            app:argType="string[]" />
+    </activity>
+</navigation>
